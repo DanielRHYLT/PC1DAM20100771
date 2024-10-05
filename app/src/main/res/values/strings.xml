@@ -7,11 +7,17 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Players</string>
+    <string name="menu_gallery">Rendimiento</string>
+    <string name="menu_slideshow">Equipos</string>
     <string name="strTitle">SIGN IN</string>
     <string name="msginputemail">Enter email</string>
     <string name="msginputpassword">Enter password</string>
     <string name="btnnameLogin">Login</string>
+    <string name="fragmenttitleplayer">PLAYERS</string>
+    <string name="fragmenttitlerendimiento">RENDIMIENTO</string>
+    <string name="msginputkm">Kilometros recorridos</string>
+    <string name="msginputmin">Minutos jugados</string>
+    <string name="btnnamecalcular">Calcular</string>
+    <string name="subtittlettxt1">El rendimiento es:</string>
 </resources>

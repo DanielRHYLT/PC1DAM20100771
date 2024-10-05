@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/navplayers">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="dev.dobler.pc1dam20100771.ui.home.HomeFragment"
+        android:id="@+id/navplayers"
+        android:name="dev.dobler.pc1dam20100771.ui.players.PlayersFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_players" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="dev.dobler.pc1dam20100771.ui.gallery.GalleryFragment"
+        android:id="@+id/navrendimiento"
+        android:name="dev.dobler.pc1dam20100771.ui.rendimiento.RendimientoFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_rendimiento" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="dev.dobler.pc1dam20100771.ui.slideshow.SlideshowFragment"
+        android:id="@+id/navequipos"
+        android:name="dev.dobler.pc1dam20100771.ui.equipos.EquiposFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_equipos" />
 </navigation>

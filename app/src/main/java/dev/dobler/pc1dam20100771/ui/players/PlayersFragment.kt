@@ -1,4 +1,4 @@
-package dev.dobler.pc1dam20100771.ui.gallery
+package dev.dobler.pc1dam20100771.ui.players
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import dev.dobler.pc1dam20100771.databinding.FragmentGalleryBinding
+import dev.dobler.pc1dam20100771.databinding.FragmentPlayersBinding
 
-class GalleryFragment : Fragment() {
+class PlayersFragment : Fragment() {
 
-    private var _binding: FragmentGalleryBinding? = null
+    private var _binding: FragmentPlayersBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
+        val playersViewModel =
+            ViewModelProvider(this).get(PlayersViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentPlayersBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textPlayers
+        playersViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
